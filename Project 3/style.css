@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.max-width-wrapper {
+    max-width: 1130px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 15px;
+}
+
+.desktop-header {
+    background-image: url(./images/desktop/image-hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 150px;
+}
+
+.top-nav {
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0
+}
+
+.top-nav li {
+    display: inline-block;
+    padding: 10px;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Alata', sans-serif;
+}
+
+a.link:hover, a.link:active {
+    text-decoration: underline;
+    color: white;
+    
+}
+
+.header-text-container {
+    min-height: calc(100vh - 150px);
+    display: flex;
+    align-items: center;
+}
+
+.header-text {
+    border: 3px solid white;
+    height: 300px;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    padding: 50px 80px;
+}
+
+.header-text-content {
+    text-transform: uppercase;
+    color: white;
+    text-align: left;
+    font-size: 70px;
+    font-weight: lighter;
+}
+
+.interactive-vr-desktop {
+    position: relative;
+    z-index: 1;
+    padding: 8rem 0;
+}
+
+.interactive-vr-overlap {
+    position: absolute;
+    z-index: 2;
+    padding: 10% 0 4rem 10%;
+    bottom: 0;
+    background-color: white;
+    width: 50%; 
+    left: 50%;
+    height: 65%;
+}
+
+.paragraph-content {
+    justify-items: center;
+    padding-top: 7%;
+    color: gray;
+    font-family: 'Alata', sans-serif;
+    text-align: justify;
+    line-height: 2rem;
+    font-size: 15px;
+}
+
+h2 {
+    font-weight: lighter;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+.creations {
+    padding: 6rem 0;
+}
+
+.grid-display {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 4rem;
+    font-weight: 700;
+}
+
+button {
+    width: 150px;
+    height: 40px;
+    background-color: white;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+button:link, button:visited {
+    background-color: white;
+    color: black;
+}
+
+button:hover, button:active, a > p:hover {
+    background-color: black;
+    color: white;
+}
+
+button p {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    height: 100%;
+    padding-top: 13px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.image {
+    position: relative;
+}
+
+.image:hover {
+    opacity: 0.6;
+}
+
+.image-text-background {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.7));
+}
+
+.image-text {
+    font-size: 35px;
+    text-transform: uppercase;
+    color: white;
+    padding-top: 23rem;
+    padding-left: 2.5rem;
+} 
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 2.5rem 0;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2em;
+}
+
+.icon {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.icon a:hover, .icon a:active {
+    text-decoration: underline;
+    color: white;
+}
+
+.bottom-nav {
+    list-style-type: none;
+}
+
+.bottom-nav li {
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.bottom-nav a:hover, .bottom-nav a:active {
+    text-decoration: underline;
+    color: white;
+}
+
+.copyright {
+    color: gray;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 768px) {
+    .max-width-wrapper {
+        max-width: 600px;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .desktop-header {
+        background-image: url(./images/desktop/image-hero.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center; 
+    }
+
+    .top-nav li {
+        display: inline-block;
+        padding: 5px;
+    }
+
+    .header-text {
+        border: 3px solid white;
+        height: 300px;
+        width: 70%;
+        display: flex;
+        align-items: center;
+        padding: 0 40px;
+    }
+    
+    .header-text-content {
+        text-transform: uppercase;
+        color: white;
+        text-align: left;
+        font-size: 40px;
+        font-weight: lighter;
+        line-height: 4rem;
+    }
+
+    .interactive-vr-desktop {
+        padding: 5rem 0;
+    }
+
+    .interactive-vr-desktop img {
+        max-width: 600px;
+        text-align: center;
+    }
+
+    .interactive-vr-desktop {
+        display: flex; 
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .interactive-vr-overlap {
+        position: static;
+        width: 100%;
+        padding: 1rem 0;
+    }
+
+    h2 {
+        font-weight: lighter;
+        text-transform: uppercase;
+        font-size: 50px;
+    }
+    .paragraph-content {
+        display: flex;
+        justify-content: center;
+        line-height: 2.2rem;
+        color: gray;
+        font-family: 'Alata', sans-serif;
+    }
+    
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    
+    .creations {
+        padding: 0 0 8rem 0;
+    }
+    
+    .grid-display > h2 {
+        font-size: 35px;
+    }
+    
+    button {
+        width: 100px;
+        height: 30px;
+    }
+    
+    button p {
+        padding-top: 9px;
+        font-size: 12px;
+    }
+
+    .image-text {
+        padding-top: 26rem;
+    } 
+    
+}
+
+@media screen and (max-width: 375px) {
+    .max-width-wrapper {
+        max-width: 300px;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .desktop-header {
+        background-image: url(./images/mobile/image-hero.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+
+}
